@@ -1,0 +1,23 @@
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\bin\Debug\Proiect Baze.exe.config
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\bin\Debug\Proiect Baze.exe
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\bin\Debug\Proiect Baze.pdb
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\obj\Debug\Proiect Baze.csprojAssemblyReference.cache
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\obj\Debug\LoginScreen.g.cs
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\obj\Debug\MainWindow.g.cs
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\obj\Debug\App.g.cs
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\obj\Debug\Proiect Baze_MarkupCompile.cache
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\obj\Debug\Proiect Baze_MarkupCompile.lref
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\obj\Debug\LoginScreen.baml
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\obj\Debug\MainWindow.baml
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\obj\Debug\Proiect Baze.g.resources
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\obj\Debug\Proiect_Baze.Properties.Resources.resources
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\obj\Debug\Proiect Baze.csproj.GenerateResource.cache
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\obj\Debug\Proiect Baze.csproj.CoreCompileInputs.cache
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\obj\Debug\Proiect Baze.exe
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\obj\Debug\Proiect Baze.pdb
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\obj\Debug\Parinti.g.cs
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\obj\Debug\Parinti.baml
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\obj\Debug\ParentUpdateData.g.cs
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\obj\Debug\ParentUpdateData.baml
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\obj\Debug\Invatator.g.cs
+D:\PROIECT BAZE DE DATE\Proiect Baze\Proiect Baze\obj\Debug\Invatator.baml

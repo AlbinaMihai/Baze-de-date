@@ -1,0 +1,117 @@
+﻿<Window x:Class="Proiect_Baze.Parinti"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proiect_Baze"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+         Icon="D:\PROIECT BAZE DE DATE\SiglaScoala"
+        Title="Note si absente`" Height="600" Width="1000" FontSize="14" Background="#291b2c">
+
+
+    <Window.Resources>
+        <Style x:Key="Tables" TargetType="DataGrid">
+            <Setter Property="ColumnHeaderStyle" Value="{DynamicResource chs1}"></Setter>
+        </Style>
+        <Style x:Key="chs1" TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="#4B0082">
+
+            </Setter>
+        </Style>
+
+    </Window.Resources>
+
+
+    <ScrollViewer VerticalAlignment="Stretch">
+        <StackPanel Margin="20 20 20 20">
+            <Label  Margin="0 0 0 10" Content="{Binding WelcomeMes}" Background="#291b2c" FontSize="36" Foreground="#CCA969" />
+            <Label MouseLeftButtonDown="Label_MouseLeftButtonDown" Content="Doriti sa modificati date personale?" Margin="0 10 0 50" FontSize="16" Foreground="#CCA969"/>
+            <StackPanel>
+                <TextBlock  HorizontalAlignment="Right" Margin="0 0 200 0" Text="Date de contact:" FontSize="16" FontStyle="Italic" Foreground="#CCA969"/>
+                <Separator   Margin="1000 0 50 0" Background="#CCA969"></Separator>
+               <Label HorizontalAlignment="Right"  Height="100" BorderBrush="#291b2c"  Background="#291b2c" Foreground="#CCA969" FontSize="18" FontWeight="Bold"  Content="{Binding DataProf}" Margin="0 5 0 0"/>
+            </StackPanel>
+            
+           
+                <Expander Header="Mustrari disciplinare" Background="#291b2c" FontSize="16" Foreground="#CCA969">
+                    <DataGrid
+                Name="Mustrari"
+                  FontStyle="Italic" FontWeight="SemiBold" FontStretch="UltraCondensed"
+           AutoGenerateColumns="False" IsReadOnly="True"  
+           RowBackground="#9932CC" AlternatingRowBackground="#800080" Background="#291b2c"
+           GridLinesVisibility="All" ColumnHeaderHeight="60" BorderThickness="08"
+           Style="{DynamicResource Tables}"
+           BorderBrush="#4B0082"  Foreground="WhiteSmoke"
+           VerticalAlignment="Top" VerticalContentAlignment="Center"
+                Margin="0,10,550,0"
+      
+                >
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding NumeElev}" Header="Nume" Width="97"/>
+                            <DataGridTextColumn Binding="{Binding PrenumeElev}" Header="Prenume" Width="97"/>
+                            <DataGridTextColumn Binding="{Binding ContinutMustrare}" Header="Mustrare" Width="270"/>
+                            <DataGridTextColumn Binding="{Binding DataMustrare}" Header="Data Mustrare" Width="150"/>
+                            <DataGridTextColumn Binding="{Binding NumeDisciplina}" Header="Disciplina" Width="100"/>
+
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Expander>
+          
+           
+                <Expander Header="Note" Background="#291b2c" FontSize="16" Foreground="#CCA969">
+                    <DataGrid 
+            x:Name="MarkGrid" 
+           FontStyle="Italic" FontWeight="SemiBold" FontStretch="UltraCondensed"
+           AutoGenerateColumns="False" IsReadOnly="True"  
+           RowBackground="#9932CC" AlternatingRowBackground="#800080" Background="#291b2c"
+           GridLinesVisibility="All" ColumnHeaderHeight="60" BorderThickness="30"
+           Style="{DynamicResource Tables}"
+           BorderBrush="#4B0082"  Foreground="WhiteSmoke"
+           VerticalAlignment="Top" VerticalContentAlignment="Center"
+           Margin="0,0,620,0">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding Nume}" Header="Nume" Width="100"/>
+                            <DataGridTextColumn Binding="{Binding Prenume}" Header="Prenume" Width="100"/>
+                            <DataGridTextColumn Binding="{Binding Nota}" Header="Nota" Width="50"/>
+                            <DataGridTextColumn Binding="{Binding Data_Nota}" Header="Data Nota" Width="200"/>
+                            <DataGridTextColumn Binding="{Binding Discipline}" Header="Disciplina" Width="150"/>
+
+                        </DataGrid.Columns>
+
+
+                    </DataGrid>
+                </Expander>
+
+
+            <Expander Header="Absente" Background="#291b2c" FontSize="16" Foreground="#CCA969">
+                <StackPanel>
+                <DataGrid Name="PrezentaElevi"
+           FontStyle="Italic" FontWeight="SemiBold" FontStretch="UltraCondensed"
+           AutoGenerateColumns="False" IsReadOnly="True"  
+           RowBackground="#9932CC" AlternatingRowBackground="#800080" Background="#291b2c"
+           GridLinesVisibility="All" ColumnHeaderHeight="60" BorderThickness="15"
+           Style="{DynamicResource Tables}"
+           BorderBrush="#4B0082"  Foreground="WhiteSmoke"
+           VerticalAlignment="Top" VerticalContentAlignment="Center"
+           Margin="0,0,550,0">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Nume}" Header="Nume" Width="100"/>
+                        <DataGridTextColumn Binding="{Binding Prenume}" Header="Prenume" Width="100"/>
+                        <DataGridTextColumn Binding="{Binding Data_Absenta}" Header="Data Absenta" Width="200"/>
+                        <DataGridTextColumn Binding="{Binding Disciplina}" Header="Disciplina" Width="100"/>
+                        <DataGridTextColumn Binding="{Binding Nume_Prof}" Header="Nume Prof." Width="100"/>
+                        <DataGridTextColumn Binding="{Binding Prenume_Prof}" Header="Prenume Prof." Width="100"/>
+                    </DataGrid.Columns>
+
+                </DataGrid>
+                
+        </StackPanel>
+            </Expander>
+           
+
+
+
+        </StackPanel>
+    </ScrollViewer>
+</Window>

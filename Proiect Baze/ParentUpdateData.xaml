@@ -1,0 +1,34 @@
+﻿<Window x:Class="Proiect_Baze.ParentUpdateData"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proiect_Baze"
+        mc:Ignorable="d"
+        Title="ParentUpdateData" Height="450" Width="800" Background="#291b2c">
+    
+
+    <StackPanel Margin="10 10 10 10">
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Nume:" Foreground="White" FontWeight="Bold"/>
+            <TextBox Text="{Binding Nume, Mode=OneWayToSource}" Margin=" 35  10 10 10" Width="145"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Nr. Telefon:" Foreground="White" FontWeight="Bold"/>
+            <TextBox  Text="{Binding NrTel, Mode=OneWayToSource}" Margin=" 10  10 10 10" Width="140" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Adresa:" Foreground="White" FontWeight="Bold"/>
+            <TextBox Text="{Binding Adresa, Mode=OneWayToSource}" Margin=" 30  10 10 10" Width="143" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Ocupatie:" Foreground="White" FontWeight="Bold"/>
+            <TextBox Text="{Binding Ocupatie, Mode=OneWayToSource}" Margin="20  10 10 10" Width="139" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" >
+            <Label Content="Studii:" Foreground="White" FontWeight="Bold"/>
+            <TextBox  Text="{Binding Studii, Mode=OneWayToSource}" Margin=" 40  10 10 10" Width="137" />
+        </StackPanel>
+        <Button  Click="Button_Click" Margin="336 70 336 20" Content="Gata!" FontWeight="Bold" Height="30" Width="100" />
+    </StackPanel>
+</Window>
